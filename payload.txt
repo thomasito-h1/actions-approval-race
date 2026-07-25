@@ -1,1 +1,1 @@
-SAFE INITIAL CONTENT - awaiting review
+MALICIOUS PAYLOAD - pushed after initial PR open, before approval
