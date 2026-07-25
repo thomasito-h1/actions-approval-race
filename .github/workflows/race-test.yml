@@ -1,0 +1,11 @@
+name: race-test
+on: pull_request
+jobs:
+  run-and-reveal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: reveal head sha and run payload
+        run: |
+          echo "HEAD_SHA=$(git rev-parse HEAD)"
+          cat payload.txt || echo "no payload.txt"
